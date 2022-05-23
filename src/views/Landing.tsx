@@ -90,7 +90,7 @@ const Landing = () => {
                   lineHeight={{ md: '44px' }}
                   fontWeight="700"
                 >
-                  111111111It's more fun and relaxing than the games your ever played! Conquer the real players of your skill
+                  It's more fun and relaxing than the games your ever played! Conquer the real players of your skill
                   level in fair and fun games.
                 </Typography>
               </Typography>
