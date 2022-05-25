@@ -3,6 +3,7 @@ import React from 'react'
 import About from './About'
 import Landing from './Landing'
 import Product from './Product'
+import What from './What'
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <Landing />
       <About />
       <Product />
-      <Community width="100%" height="auto" />
+      <What />
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Typography, Box } from '@mui/material'
 import { ImageContainer } from 'components'
 import useIntersectionObserver, { useInViewContext } from 'helpers'
+import { margin } from '@mui/system'
 
 const Product = () => {
   const ref = React.useRef<HTMLDivElement | null>(null)
@@ -26,7 +27,10 @@ const Product = () => {
       id="product"
       sx={{
         backgroundColor: 'primary.main',
-        paddingY: '80px',
+        paddingY: {
+          xs:'0px',
+          md:'80px'
+        },
       }}
     >
       <Container
@@ -35,7 +39,7 @@ const Product = () => {
         }}
         ref={ref}
       >
-        <Typography textAlign="center" fontSize={{ xs: '24px', md: '48px' }} marginBottom="70px">
+        <Typography sx={{marginTop:{xs:'40px'},marginBottom:{xs:'40px',md:'70px'}}} textAlign="center" fontSize={{ xs: '24px', md: '48px' }} >
           Product
         </Typography>
 
@@ -45,6 +49,7 @@ const Product = () => {
               position: 'relative',
               flex: '0 0 50%',
               mb: { xs: '1rem', md: '0' },
+
             }}
           >
             <ImageContainer
@@ -52,6 +57,8 @@ const Product = () => {
               sx={{
                 width: '203px',
                 mx: 'auto',
+                position: {xs:'relative'},
+                left:{xs:'-10%'}
               }}
             />
             <ImageContainer
@@ -60,7 +67,7 @@ const Product = () => {
                 width: '173px',
                 position: 'absolute',
                 top: '38px',
-                left: '50%',
+                left: {xs:'35%',md:'50%'},
               }}
             />
           </Box>
@@ -68,18 +75,46 @@ const Product = () => {
           <Box
             sx={{
               flex: '0 0 50%',
-              paddingLeft: { md: '70px' },
+              paddingLeft: { xs:'30px',  md: '70px' },
+              marginTop:{xs:'40px'}
             }}
           >
-            <Typography marginBottom={{ xs: '50px', md: '130px' }} fontSize={{ md: '24px' }} fontWeight="800">
-              Fantasy Games is the world leading eSports platform for mobile games. We organizes head to head matches,
-              tournament and live events inside mobile games. Our platform helps mobile game developers turn their
-              casual esports games into a competitive mobile arena with our platform.
-            </Typography>
-            <Typography fontSize={{ md: '24px' }} fontWeight="800">
-              Fantasy Games is building a world-wide gaming platform that provide a fun and fair skill-based mobile
-              gaming experience to anyone.
-            </Typography>
+             <Typography
+                color="text.primary"
+                fontSize={{ xs: '20px', md: '32px' }}
+                fontWeight="900"
+                lineHeight={{ md: '63px' }}
+                mb={{ xs: 2, md: '50px' }}
+                whiteSpace="nowrap"
+              >
+                An Esports gaming platform
+              </Typography>
+              <Typography
+                component="ul"
+                sx={{
+                  listStylePosition: 'outside',
+                  paddingLeft: '24px',
+                }}
+              >
+                <Typography
+                  component="li"
+                  fontSize={{ xs: '16px', md: '24px' }}
+                  lineHeight={{ md: '44px' }}
+                  fontWeight="700"
+                >
+                  Tons of great games to decorate your life !
+                </Typography>
+                <Typography
+                  component="li"
+                  fontSize={{ xs: '16px', md: '24px' }}
+                  lineHeight={{ md: '44px' }}
+                  fontWeight="700"
+                >
+                  It's more fun and relaxing than the games your ever played! Conquer the real players of your skill
+                  level in fair and fun games.
+                </Typography>
+              </Typography>
+           
           </Box>
         </Box>
       </Container>

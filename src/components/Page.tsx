@@ -133,7 +133,11 @@ const ResponsiveAppBar: React.FC<Props> = ({ children, ...props }) => {
                 height: { xs: 'unset', md: '185px' },
                 alingItems: 'center',
                 maxWidth: '1020px',
-                padding: '25px',
+                padding: {
+                  xs:'0px',
+                  md: "25px"
+                },
+
               }}
             >
               <Box
@@ -248,7 +252,7 @@ const ResponsiveAppBar: React.FC<Props> = ({ children, ...props }) => {
                 </Box>
                 <Box
                   sx={{
-                    display: 'flex',
+                    display: {xs:'none',md:'flex'},
                     justifyContent: 'space-between',
                     flexWrap: 'wrap',
                     gap: { xs: '10px', md: '0' },

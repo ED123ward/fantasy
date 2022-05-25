@@ -48,9 +48,7 @@ const About = () => {
             }}
           >
             <Typography fontWeight="800" fontSize={{ md: '24px' }} mb={{ xs: '1rem', md: '0' }}>
-              Fantasy Games is a leading eSports platform for mobile games. We organizes head to head matches,
-              tournament and live events inside mobile games. Our platform helps mobile game developers turn their
-              casual esports games into a competitive mobile arena with our platform.
+            Fantasy Games is a leading eSports platform for mobile games. We organize PVP matches, tournaments and live events inside mobile games. Our platform helps mobile game developers turn their casual games into a competitive mobile esports arena.
             </Typography>
             <CardMedia
               component="img"
@@ -66,8 +64,7 @@ const About = () => {
           Our Vision
         </Typography>
         <Typography textAlign="center" fontWeight="800" fontSize={{ md: '24px' }}>
-          Fantasy Games is building a world-wide gaming platform that provide a fun and fair skill-based mobile gaming
-          experience to anyone.
+        Fantasy Games is building a world-wide gaming platform that provides a fun and fair skill-based mobile gaming experience to everyone.
         </Typography>
       </Box>
     </Container>
