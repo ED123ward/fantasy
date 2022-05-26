@@ -174,7 +174,7 @@ const Landing = () => {
               mb={{ xs: 2, md: "50px" }}
               whiteSpace="nowrap"
             >
-              Only one whitelist spot per user
+              Ways to earn Fantasy coins
             </Typography>
             <Typography
               component="ul"
