@@ -47,7 +47,7 @@ const Landing = () => {
         ref={ref}
       >
         <Box
-          sx={{ flexDirection: { xs: "column", md: "row" },display: 'flex' }}
+          sx={{ flexDirection: { xs: "column", md: "row" },display: 'flex', alignItems:'center' }}
           paddingBottom={{
             xs: "40px",
           }}
@@ -55,7 +55,7 @@ const Landing = () => {
         >
           <Box
             sx={{
-              flex: "0 0 70%",
+              flex: "0 0 75%",
               paddingLeft: { md: "70px" },
               margin: "10% auto 0 auto",
             }}
@@ -67,14 +67,12 @@ const Landing = () => {
               fontWeight="900"
               lineHeight={{ md: "63px" }}
             >
-              Fantasy Games is building a world-wide gaming platform that
-              provides a fun and fair skill-based mobile gaming experience to
-              everyone.
+            Join our Alpha test for a whitelist opportunity! Players will be rewarded with Fantasy coins for playing the battle to earn tournaments. You will earn Fantasy coins regardless of winning or losing, but if you win, you will be rewarded with more.
             </Typography>
           </Box>
           <ImageContainer
           url="/images/landing-right-bubbles.png"
-          sx={{ maxWidth: { xs: '10px', md: '27vw' }, height: 'fit-content' , display:{xs:'none',md:'block'},margin:{xs:'30px auto'} }}
+          sx={{ maxWidth: { xs: '10px', md: '27vw' }, height: 'fit-content' , display:{xs:'none',md:'block'},margin:{xs:'90px auto 0 auto'} }}
         />
         </Box>
       </Container>
@@ -120,7 +118,7 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-              Join our Alpha test for a whitelist opportunity! Players will be rewarded with Fantasy coins for playing the battle to earn tournaments. You will earn Fantasy coins regardless of winning or losing, but if you win, you will be rewarded with more.
+              Fantasy coins can be used for participating in the whitelist of the limited edition NFTs & starter NFTs. The more Fantasy coins, the higher the chance of being whitelisted.
 
               </Typography>
               <Typography
