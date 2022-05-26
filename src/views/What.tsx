@@ -29,8 +29,7 @@ const Product = () => {
       <Box
         id="product"
         sx={{
-          //   backgroundColor: "primary.main",
-          paddingY: "80px",
+          paddingBottom: {xs:'80px'},
         }}
       >
         <Container
