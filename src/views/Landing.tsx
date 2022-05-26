@@ -105,7 +105,7 @@ const Landing = () => {
               mb={{ xs: 2, md: "50px" }}
               whiteSpace="nowrap"
             >
-              An Esports gaming platform
+             Whitelist Qualifications
             </Typography>
             <Typography
               component="ul"
@@ -120,7 +120,8 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-                Tons of great games to decorate your life !
+              Join our Alpha test for a whitelist opportunity! Players will be rewarded with Fantasy coins for playing the battle to earn tournaments. You will earn Fantasy coins regardless of winning or losing, but if you win, you will be rewarded with more.
+
               </Typography>
               <Typography
                 component="li"
@@ -128,9 +129,8 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-                It's more fun and relaxing than the games your ever played!
-                Conquer the real players of your skill level in fair and fun
-                games.
+                Only one whitelist spot per user
+
               </Typography>
             </Typography>
           </Box>
@@ -156,7 +156,7 @@ const Landing = () => {
               mb={{ xs: 2, md: "50px" }}
               whiteSpace="nowrap"
             >
-              An Esports gaming platform
+             Only one whitelist spot per user
             </Typography>
             <Typography
               component="ul"
@@ -171,7 +171,8 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-                Tons of great games to decorate your life !
+               Report a bug or provide suggestions for improvements
+
               </Typography>
               <Typography
                 component="li"
@@ -179,9 +180,23 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-                It's more fun and relaxing than the games your ever played!
-                Conquer the real players of your skill level in fair and fun
-                games.
+               Invite friends
+              </Typography>
+              <Typography
+                component="li"
+                fontSize={{ xs: "14px", md: "24px" }}
+                lineHeight={{ md: "44px" }}
+                fontWeight="700"
+              >
+              Upload a video promoting the app
+              </Typography>
+              <Typography
+                component="li"
+                fontSize={{ xs: "14px", md: "24px" }}
+                lineHeight={{ md: "44px" }}
+                fontWeight="700"
+              >
+             Enter battle to earn tournaments every day
               </Typography>
             </Typography>
           </Box>
