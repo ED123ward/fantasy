@@ -76,7 +76,7 @@ const Landing = () => {
               fontWeight="900"
               lineHeight={{ md: "63px" }}
             >
-              Join our Alpha test for a whitelist opportunity!
+              Join Our Alpha Test for a Whitelist Opportunity!
               <TextP>
                 Players will be rewarded with Fantasy coins for playing the
                 battle to earn tournaments. You will earn Fantasy coins
@@ -176,7 +176,7 @@ const Landing = () => {
               mb={{ xs: 2, md: "50px" }}
               whiteSpace="nowrap"
             >
-              Ways to earn Fantasy coins
+              Ways to Earn Fantasy Coins
             </Typography>
             <Typography
               component="ul"

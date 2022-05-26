@@ -87,7 +87,7 @@ const Product = () => {
                 mb={{ xs: 2, md: '50px' }}
                 whiteSpace="nowrap"
               >
-                An Esports gaming platform
+                An Esports Gaming Platform
               </Typography>
               <Typography
                 component="ul"
