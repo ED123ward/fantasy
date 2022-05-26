@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { Container, Typography, Button, Box } from "@mui/material";
 import { ImageContainer } from "components";
 import useIntersectionObserver, { useInViewContext } from "helpers";
@@ -28,7 +29,7 @@ const Landing = () => {
       ref={ref}
       sx={{
         paddingTop: "68px",
-        paddingBottom:{xs:'60px',md:''},
+        paddingBottom: { xs: "60px", md: "" },
         background:
           "url(/images/landingBg.png), linear-gradient(90deg, #1F213B 0%, #1E1F3A 100%)",
         backgroundPosition: "bottom, center",
@@ -37,9 +38,14 @@ const Landing = () => {
       }}
     >
       <ImageContainer
-          url="/images/landing-right-bubbles.png"
-          sx={{ maxWidth: { xs: '250px', md: '37vw' }, height: 'fit-content' , display:{xs:'block',md:'none'},margin:{xs:'0 auto'} }}
-        />
+        url="/images/landing-right-bubbles.png"
+        sx={{
+          maxWidth: { xs: "250px", md: "37vw" },
+          height: "fit-content",
+          display: { xs: "block", md: "none" },
+          margin: { xs: "0 auto" },
+        }}
+      />
       <Container
         sx={{
           paddingBottom: { xs: "60px", md: "60px" },
@@ -47,33 +53,47 @@ const Landing = () => {
         ref={ref}
       >
         <Box
-          sx={{ flexDirection: { xs: "column", md: "row" },display: 'flex', alignItems:'center' }}
+          sx={{
+            flexDirection: { xs: "column", md: "row" },
+            display: "flex",
+            alignItems: "center",
+          }}
           paddingBottom={{
             xs: "40px",
           }}
-          
         >
           <Box
             sx={{
               flex: "0 0 75%",
-              paddingLeft: { md: "70px" },
+              paddingLeft: { md: "0px" },
               margin: "10% auto 0 auto",
             }}
           >
             <Typography
-              textAlign="center"
+              textAlign="left"
               color="text.primary"
               fontSize={{ xs: "26px", md: "30px" }}
               fontWeight="900"
               lineHeight={{ md: "63px" }}
             >
-            Join our Alpha test for a whitelist opportunity! Players will be rewarded with Fantasy coins for playing the battle to earn tournaments. You will earn Fantasy coins regardless of winning or losing, but if you win, you will be rewarded with more.
+              Join our Alpha test for a whitelist opportunity!
+              <TextP>
+                Players will be rewarded with Fantasy coins for playing the
+                battle to earn tournaments. You will earn Fantasy coins
+                regardless of winning or losing, but if you win, you will be
+                rewarded with more.
+              </TextP>
             </Typography>
           </Box>
           <ImageContainer
-          url="/images/landing-right-bubbles.png"
-          sx={{ maxWidth: { xs: '10px', md: '27vw' }, height: 'fit-content' , display:{xs:'none',md:'block'},margin:{xs:'90px auto 0 auto'} }}
-        />
+            url="/images/landing-right-bubbles.png"
+            sx={{
+              maxWidth: { xs: "10px", md: "27vw" },
+              height: "fit-content",
+              display: { xs: "none", md: "block" },
+              margin: { xs: "90px auto 0 auto" },
+            }}
+          />
         </Box>
       </Container>
 
@@ -89,7 +109,7 @@ const Landing = () => {
         <Box
           mb={{ xs: 2, md: "45px" }}
           sx={{
-            width: "100%",
+            width: "50%",
             marginRight: { md: "50px" },
             // background: 'url(/images/landing-right-bubbles.png) no-repeat right center  / contain',
           }}
@@ -103,7 +123,7 @@ const Landing = () => {
               mb={{ xs: 2, md: "50px" }}
               whiteSpace="nowrap"
             >
-             Whitelist Qualifications
+              Whitelist Qualifications
             </Typography>
             <Typography
               component="ul"
@@ -118,8 +138,9 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-              Fantasy coins can be used for participating in the whitelist of the limited edition NFTs & starter NFTs. The more Fantasy coins, the higher the chance of being whitelisted.
-
+                Fantasy coins can be used for participating in the whitelist of
+                the limited edition NFTs & starter NFTs. The more Fantasy coins,
+                the higher the chance of being whitelisted.
               </Typography>
               <Typography
                 component="li"
@@ -128,7 +149,6 @@ const Landing = () => {
                 fontWeight="700"
               >
                 Only one whitelist spot per user
-
               </Typography>
             </Typography>
           </Box>
@@ -140,8 +160,8 @@ const Landing = () => {
         <Box
           mb={{ xs: 2, md: "45px" }}
           sx={{
-            width: "80%",
-            marginLeft: { md: "50px" },
+            width: "50%",
+            marginLeft: { md: "0px" },
             // background: 'url(/images/landing-right-bubbles.png) no-repeat right center  / contain',
           }}
         >
@@ -154,7 +174,7 @@ const Landing = () => {
               mb={{ xs: 2, md: "50px" }}
               whiteSpace="nowrap"
             >
-             Only one whitelist spot per user
+              Only one whitelist spot per user
             </Typography>
             <Typography
               component="ul"
@@ -169,8 +189,7 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-               Report a bug or provide suggestions for improvements
-
+                Report a bug or provide suggestions for improvements
               </Typography>
               <Typography
                 component="li"
@@ -178,7 +197,7 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-               Invite friends
+                Invite friends
               </Typography>
               <Typography
                 component="li"
@@ -186,7 +205,7 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-              Upload a video promoting the app
+                Upload a video promoting the app
               </Typography>
               <Typography
                 component="li"
@@ -194,7 +213,7 @@ const Landing = () => {
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
               >
-             Enter battle to earn tournaments every day
+                Enter battle to earn tournaments every day
               </Typography>
             </Typography>
           </Box>
@@ -230,3 +249,9 @@ const Landing = () => {
 };
 
 export default Landing;
+
+const TextP = styled.div`
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+`;
