@@ -132,7 +132,7 @@ const ResponsiveAppBar: React.FC<Props> = ({ children, ...props }) => {
                 borderRadius: '15px',
                 height: { xs: 'unset', md: '185px' },
                 alingItems: 'center',
-                maxWidth: '1020px',
+                maxWidth: '1200px',
                 padding: {
                   xs:'0px',
                   md: "25px"
