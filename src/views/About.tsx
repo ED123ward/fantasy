@@ -47,7 +47,7 @@ const About = () => {
               flexDirection: { xs: 'column', md: 'row' },
             }}
           >
-            <Typography fontWeight="800" fontSize={{ md: '24px' }} mb={{ xs: '1rem', md: '0' }}>
+            <Typography fontWeight="800" fontSize={{ md: '24px' }} mb={{ xs: '1rem', md: '0' }} textAlign={{xs:'center'}}>
             Fantasy Games is a leading eSports platform for mobile games. We organize PVP matches, tournaments and live events inside mobile games. Our platform helps mobile game developers turn their casual games into a competitive mobile esports arena.
             </Typography>
             <CardMedia

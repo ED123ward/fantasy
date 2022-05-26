@@ -98,17 +98,19 @@ const Product = () => {
               >
                 <Typography
                   component="li"
-                  fontSize={{ xs: '16px', md: '24px' }}
+                  fontSize={{ xs: '14px', md: '18px' }}
                   lineHeight={{ md: '44px' }}
                   fontWeight="700"
+                  color='#D0D0D2'
                 >
                   Tons of great games to decorate your life !
                 </Typography>
                 <Typography
                   component="li"
-                  fontSize={{ xs: '16px', md: '24px' }}
+                  fontSize={{ xs: '14px', md: '18px' }}
                   lineHeight={{ md: '44px' }}
                   fontWeight="700"
+                  color='#D0D0D2'
                 >
                   It's more fun and relaxing than the games your ever played! Conquer the real players of your skill
                   level in fair and fun games.

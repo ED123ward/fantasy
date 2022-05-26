@@ -109,7 +109,7 @@ const Landing = () => {
         <Box
           mb={{ xs: 2, md: "45px" }}
           sx={{
-            width: "50%",
+            width: {xs:'100%',md:'50%'},
             marginRight: { md: "50px" },
             // background: 'url(/images/landing-right-bubbles.png) no-repeat right center  / contain',
           }}
@@ -134,9 +134,10 @@ const Landing = () => {
             >
               <Typography
                 component="li"
-                fontSize={{ xs: "14px", md: "24px" }}
+                fontSize={{ xs: "14px", md: "18px" }}
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
+                color='#D0D0D2'
               >
                 Fantasy coins can be used for participating in the whitelist of
                 the limited edition NFTs & starter NFTs. The more Fantasy coins,
@@ -144,9 +145,10 @@ const Landing = () => {
               </Typography>
               <Typography
                 component="li"
-                fontSize={{ xs: "14px", md: "24px" }}
+                fontSize={{ xs: "14px", md: "18px" }}
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
+                color='#D0D0D2'
               >
                 Only one whitelist spot per user
               </Typography>
@@ -160,7 +162,7 @@ const Landing = () => {
         <Box
           mb={{ xs: 2, md: "45px" }}
           sx={{
-            width: "50%",
+            width: {xs:'100%',md:'50%'},
             marginLeft: { md: "0px" },
             // background: 'url(/images/landing-right-bubbles.png) no-repeat right center  / contain',
           }}
@@ -185,33 +187,37 @@ const Landing = () => {
             >
               <Typography
                 component="li"
-                fontSize={{ xs: "14px", md: "24px" }}
+                fontSize={{ xs: "14px", md: "18px" }}
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
+                color='#D0D0D2'
               >
                 Report a bug or provide suggestions for improvements
               </Typography>
               <Typography
                 component="li"
-                fontSize={{ xs: "14px", md: "24px" }}
+                fontSize={{ xs: "14px", md: "18px" }}
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
+                color='#D0D0D2'
               >
                 Invite friends
               </Typography>
               <Typography
                 component="li"
-                fontSize={{ xs: "14px", md: "24px" }}
+                fontSize={{ xs: "14px", md: "18px" }}
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
+                color='#D0D0D2'
               >
                 Upload a video promoting the app
               </Typography>
               <Typography
                 component="li"
-                fontSize={{ xs: "14px", md: "24px" }}
+                fontSize={{ xs: "14px", md: "18px" }}
                 lineHeight={{ md: "44px" }}
                 fontWeight="700"
+                color='#D0D0D2'
               >
                 Enter battle to earn tournaments every day
               </Typography>
@@ -251,7 +257,9 @@ const Landing = () => {
 export default Landing;
 
 const TextP = styled.div`
-  font-size: 24px;
+ font-size: 18px;
+line-height: 44px;
   font-weight: 600;
   margin-top: 30px;
+  color: #D0D0D2;
 `;
