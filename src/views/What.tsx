@@ -48,35 +48,13 @@ const Product = () => {
           </Typography>
 
           <Box
-            sx={{ flexDirection: { xs: "column", md: "row" } }}
-            paddingBottom={{
-              xs: "40px",
-            }}
-          >
-            <Box
-              sx={{
-                flex: "0 0 50%",
-                paddingLeft: { md: "70px" },
-              }}
-            >
-              <Typography
-                textAlign="center"
-                color="#D0D0D2"
-                fontSize={{ md: "18px" }}
-              >
-                Fantasy Games is building a world-wide gaming platform that
-                provides a fun and fair skill-based mobile gaming experience to
-                everyone.
-              </Typography>
-            </Box>
-          </Box>
-
-          <Box
             sx={{
               display: {xs: "none", md: "flex"},
               justifyContent: "space-between",
               flexDirection: { xs: "column", md: "row" },
-              padding: '20px'
+              padding: '20px',
+              width:'800px',
+              margin:'0 auto'
              
             }}
           >
@@ -177,6 +155,32 @@ const Product = () => {
               />
             </Box>
           </Box>
+
+          <Box
+            sx={{ flexDirection: { xs: "column", md: "row" } }}
+            paddingBottom={{
+              xs: "40px",
+            }}
+          >
+            <Box
+              sx={{
+                flex: "0 0 50%",
+                paddingLeft: { md: "70px" },
+                margin: '40px'
+              }}
+            >
+              <Typography
+                textAlign="center"
+                color="#D0D0D2"
+                fontSize={{ md: "18px" }}
+              >
+                Fantasy Games is building a world-wide gaming platform that
+                provides a fun and fair skill-based mobile gaming experience to
+                everyone.
+              </Typography>
+            </Box>
+          </Box>
+
 
           <Box
             sx={{
@@ -292,6 +296,7 @@ const WhatBlock = styled.div`
   background: url(${Whatbackground});
   background-repeat: no-repeat;
   background-position: 0 50%;
+  background-size: 100% 100%;
   width: 100%;
   height: 946px;
   

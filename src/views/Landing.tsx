@@ -42,19 +42,20 @@ const Landing = () => {
         />
       <Container
         sx={{
-          paddingBottom: { xs: "60px", md: "160px" },
+          paddingBottom: { xs: "60px", md: "60px" },
         }}
         ref={ref}
       >
         <Box
-          sx={{ flexDirection: { xs: "column", md: "row" } }}
+          sx={{ flexDirection: { xs: "column", md: "row" },display: 'flex' }}
           paddingBottom={{
             xs: "40px",
           }}
+          
         >
           <Box
             sx={{
-              flex: "0 0 50%",
+              flex: "0 0 70%",
               paddingLeft: { md: "70px" },
               margin: "10% auto 0 auto",
             }}
@@ -71,6 +72,10 @@ const Landing = () => {
               everyone.
             </Typography>
           </Box>
+          <ImageContainer
+          url="/images/landing-right-bubbles.png"
+          sx={{ maxWidth: { xs: '10px', md: '27vw' }, height: 'fit-content' , display:{xs:'none',md:'block'},margin:{xs:'30px auto'} }}
+        />
         </Box>
       </Container>
 
